@@ -1,0 +1,19 @@
+{
+  "name": "lightcss",
+  "version": "0.0.1",
+  "description": "A lightweight css framework.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Daniel Falabella",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "jit-grunt": "^0.9.1",
+    "less": "^2.5.1"
+  }
+}

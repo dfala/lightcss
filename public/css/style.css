@@ -1,0 +1,22 @@
+* {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.s-container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  outline: 1px solid red;
+}
+@media (max-width: 600px) {
+  .s-container {
+    width: 100%;
+  }
+}
