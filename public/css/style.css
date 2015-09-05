@@ -7,6 +7,12 @@ html,
 body {
   background-color: #eee;
 }
+hr {
+  border-bottom: none;
+  border-top: 1px solid #D5D5D5;
+  border-left: none;
+  margin: 30px 0;
+}
 html,
 body {
   font-size: 16px;
@@ -67,7 +73,7 @@ button {
   border: none;
   border-radius: 2px;
   background-color: #ffffff;
-  border: 1px solid #767676;
+  border: 1px solid #9a9797;
 }
 .l-btn-light:hover {
   background-color: #e6e6e6;
@@ -89,7 +95,7 @@ button {
   border-radius: 2px;
   color: #fff;
   background-color: #262626;
-  border: 1px solid #767676;
+  border: 1px solid #9a9797;
 }
 .l-btn-dark:hover {
   background-color: #e6e6e6;
@@ -169,15 +175,21 @@ button {
 .l-btn-danger:active {
   background-color: #d90000;
 }
+.l-form :first-child {
+  margin-top: 0px;
+}
 .l-form input {
   margin: 10px 0;
+}
+.l-form button {
+  margin-top: 10px;
 }
 .l-input {
   padding: 11px 17px;
   margin: 20px 0;
   width: 100%;
   border-radius: 2px;
-  border: 1px solid #767676;
+  border: 1px solid #9a9797;
 }
 .l-input:focus {
   outline: none;
@@ -210,7 +222,7 @@ body {
   padding: 20px;
   border-radius: 2px;
   background-color: #ffffff;
-  border: 1px solid #767676;
+  border: 1px solid #9a9797;
 }
 .l-msg-dark {
   margin: 20px 0;
