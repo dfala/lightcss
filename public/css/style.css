@@ -1,3 +1,5 @@
+/*********************/
+/*** WWW SPECIFIC ***/
 * {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
@@ -13,6 +15,8 @@ hr {
   border-left: none;
   margin: 30px 0;
 }
+/*********************/
+/*** CSS FRAMEWORK ***/
 html,
 body {
   font-size: 16px;
@@ -51,6 +55,7 @@ a {
 a:hover {
   color: #0047b3;
 }
+/*** COMPONENTS ***/
 button {
   cursor: pointer;
 }
@@ -175,6 +180,13 @@ button {
 .l-btn-danger:active {
   background-color: #d90000;
 }
+pre {
+  background-color: #e8e8e8;
+  color: #545454;
+  padding: 20px;
+  font-family: monospace;
+  letter-spacing: -1px;
+}
 .l-form :first-child {
   margin-top: 0px;
 }
@@ -195,6 +207,7 @@ button {
   outline: none;
   border: 1px solid #1a75ff;
 }
+/*** LAYOUT ***/
 html,
 body {
   margin: 0;
