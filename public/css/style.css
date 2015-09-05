@@ -1,6 +1,11 @@
 * {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #eee;
 }
 html,
 body,
@@ -142,13 +147,56 @@ body {
 }
 .s-container {
   width: 900px;
-  margin: 0 auto;
+  margin: 20px auto;
   background-color: #fff;
   padding: 20px;
-  outline: 1px solid red;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .s-container {
     width: 100%;
   }
+}
+.l-msg {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 2px;
+}
+.l-msg-light {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: 1px solid #767676;
+}
+.l-msg-dark {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #262626;
+  border: 1px solid #262626;
+  color: #fff;
+}
+.l-msg-success {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #25be66;
+  border: 1px solid #25be66;
+  color: #fff;
+}
+.l-msg-main {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #1a75ff;
+  border: 1px solid #1a75ff;
+  color: #fff;
+}
+.l-msg-danger {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #ff2727;
+  border: 1px solid #ff2727;
+  color: #fff;
 }

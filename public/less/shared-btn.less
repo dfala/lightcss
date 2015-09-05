@@ -22,76 +22,74 @@ button {
 
 .l-btn-light {
     .l-btn;
-    @here-color: #fff;
-    background-color: @here-color;
+    background-color: @cl-light;
     border: @df-border;
 
     &:hover {
-      background-color: darken(@here-color, 5%);
+      background-color: darken(@cl-light, 5%);
     }
 
     &:active {
-      background-color: darken(@here-color, 10%);
+      background-color: darken(@cl-light, 10%);
     }
 }
 
 .l-btn-dark {
     .l-btn;
-    @here-color: #262626;
     color: #fff;
-    background-color: @here-color;
+    background-color: @cl-dark;
     border: @df-border;
 
     &:hover {
-      background-color: darken(@here-color, 5%);
+      background-color: darken(@cl-dark, 5%);
     }
 
     &:active {
-      background-color: darken(@here-color, 10%);
+      background-color: darken(@cl-dark, 10%);
     }
 }
 
 .l-btn-main {
     .l-btn;
-    background-color: @color-main;
+    background-color: @cl-main;
     color: #fff;
-    border: 1px solid @color-main;
+    border: 1px solid @cl-main;
 
     &:hover {
-      background-color: darken(@color-main, 10%);
+      background-color: darken(@cl-main, 10%);
     }
 
     &:active {
-      background-color: darken(@color-main, 15%);
+      background-color: darken(@cl-main, 15%);
     }
 }
 
 .l-btn-success {
   .l-btn;
   color: #fff;
-  background-color: @color-succes;
-  border: 1px solid @color-succes;
+  background-color: @cl-success;
+  border: 1px solid @cl-success;
 
   &:hover {
-    background-color: darken(@color-succes, 10%);
+    background-color: darken(@cl-success, 10%);
   }
 
   &:active {
-    background-color: darken(@color-succes, 15%);
+    background-color: darken(@cl-success, 15%);
   }
 }
 
 .l-btn-danger {
   .l-btn;
   color: #fff;
-  background-color: @color-danger;
-  border: 1px solid @color-danger;
+  background-color: @cl-danger;
+  border: 1px solid @cl-danger;
 
   &:hover {
-    background-color: darken( @color-danger, 10%);
+    background-color: darken(@cl-danger, 10%);
   }
 
   &:active {
-    background-color: darken( @color-danger, 15%);
+    background-color: darken(@cl-danger, 15%);
   }
 }
