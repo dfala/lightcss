@@ -1,0 +1,15 @@
+// a {
+//   color: yellow;
+// }\
+
+a {
+  color: @color-main;
+  font-weight: bolder;
+  border-bottom: 0;
+
+  &:hover {
+    color: darken(@color-main, 10%);
+    font-weight: bolder;
+    border-bottom: 1px dash black;
+  }
+}
