@@ -1,0 +1,33 @@
+button {
+  cursor: pointer;
+}
+
+.s-btn {
+  @this-bg-color: #fff;
+  background-color: @this-bg-color;
+  padding: 10px;
+  border: @df-border;
+
+  &:hover {
+    background-color: darken(@this-bg-color, 10%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-main {
+    .s-btn;
+    background-color: @color-main;
+    color: #fff;
+    border: none;
+
+    &:hover {
+      background-color: darken(@color-main, 10%);
+    }
+
+    &:active {
+      background-color: darken(@color-main, 15%);
+    }
+}

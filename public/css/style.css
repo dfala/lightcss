@@ -3,6 +3,48 @@
   font-weight: 100;
 }
 html,
+body,
+button {
+  font-size: 16px;
+}
+button {
+  font-size: 14px;
+}
+button {
+  cursor: pointer;
+}
+.s-btn {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #525252;
+}
+.s-btn:hover {
+  background-color: #e6e6e6;
+}
+.s-btn:focus {
+  outline: none;
+}
+.btn-main {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #525252;
+  background-color: #1a75ff;
+  color: #fff;
+  border: none;
+}
+.btn-main:hover {
+  background-color: #e6e6e6;
+}
+.btn-main:focus {
+  outline: none;
+}
+.btn-main:hover {
+  background-color: #005be6;
+}
+.btn-main:active {
+  background-color: #0051cd;
+}
+html,
 body {
   margin: 0;
   padding: 0;
