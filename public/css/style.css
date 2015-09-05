@@ -8,21 +8,42 @@ body {
   background-color: #eee;
 }
 html,
-body,
-button {
+body {
   font-size: 16px;
 }
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.83em;
+}
+h6 {
+  font-size: 0.67em;
+}
+p {
+  font-size: 1em;
+}
 button {
-  font-size: 14px;
+  font-size: 1em;
+}
+input {
+  font-size: 1em;
 }
 a {
   color: #1a75ff;
-  font-weight: bolder;
   text-decoration: none;
 }
 a:hover {
-  color: #003380;
-  font-weight: bolder;
+  color: #0047b3;
 }
 button {
   cursor: pointer;
@@ -147,6 +168,20 @@ button {
 }
 .l-btn-danger:active {
   background-color: #d90000;
+}
+.l-form input {
+  margin: 10px 0;
+}
+.l-input {
+  padding: 11px 17px;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #767676;
+}
+.l-input:focus {
+  outline: none;
+  border: 1px solid #1a75ff;
 }
 html,
 body {
