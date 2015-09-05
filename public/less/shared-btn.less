@@ -2,11 +2,13 @@ button {
   cursor: pointer;
 }
 
-.s-btn {
+.l-btn {
   @this-bg-color: #fff;
+  box-sizing: border-box;
   background-color: @this-bg-color;
-  padding: 10px;
-  border: @df-border;
+  padding: 11px 17px;
+  border: none;
+  border-radius: @radius;
 
   &:hover {
     background-color: darken(@this-bg-color, 10%);
@@ -17,11 +19,43 @@ button {
   }
 }
 
-.btn-main {
-    .s-btn;
+
+.l-btn-light {
+    .l-btn;
+    @here-color: #fff;
+    background-color: @here-color;
+    border: @df-border;
+
+    &:hover {
+      background-color: darken(@here-color, 5%);
+    }
+
+    &:active {
+      background-color: darken(@here-color, 10%);
+    }
+}
+
+.l-btn-dark {
+    .l-btn;
+    @here-color: #262626;
+    color: #fff;
+    background-color: @here-color;
+    border: @df-border;
+
+    &:hover {
+      background-color: darken(@here-color, 5%);
+    }
+
+    &:active {
+      background-color: darken(@here-color, 10%);
+    }
+}
+
+.l-btn-main {
+    .l-btn;
     background-color: @color-main;
     color: #fff;
-    border: none;
+    border: 1px solid @color-main;
 
     &:hover {
       background-color: darken(@color-main, 10%);
@@ -30,4 +64,34 @@ button {
     &:active {
       background-color: darken(@color-main, 15%);
     }
+}
+
+.l-btn-success {
+  .l-btn;
+  color: #fff;
+  background-color: @color-succes;
+  border: 1px solid @color-succes;
+
+  &:hover {
+    background-color: darken(@color-succes, 10%);
+  }
+
+  &:active {
+    background-color: darken(@color-succes, 15%);
+  }
+}
+
+.l-btn-danger {
+  .l-btn;
+  color: #fff;
+  background-color: @color-danger;
+  border: 1px solid @color-danger;
+
+  &:hover {
+    background-color: darken( @color-danger, 10%);
+  }
+
+  &:active {
+    background-color: darken( @color-danger, 15%);
+  }
 }
