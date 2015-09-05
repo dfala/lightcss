@@ -15,6 +15,15 @@ button {
 button {
   font-size: 14px;
 }
+a {
+  color: #1a75ff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+a:hover {
+  color: #003380;
+  font-weight: bolder;
+}
 button {
   cursor: pointer;
 }
