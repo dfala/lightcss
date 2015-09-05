@@ -3,12 +3,26 @@
   margin: 20px 0;
   padding: @lg-padding;
   border-radius: @radius;
+
+  i {
+    float: right;
+    cursor: pointer;
+    &:hover {
+      color: darken(#fff, 15%);
+    }
+  }
 }
 
 .l-msg-light {
   .l-msg;
   background-color: @cl-light;
   border: @df-border;
+
+  i {
+    &:hover {
+      color: lighten(#000, 20%);
+    }
+  }
 }
 
 .l-msg-dark {
