@@ -13,36 +13,126 @@ button {
 button {
   cursor: pointer;
 }
-.s-btn {
+.l-btn {
+  box-sizing: border-box;
   background-color: #ffffff;
-  padding: 10px;
-  border: 1px solid #525252;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 2px;
 }
-.s-btn:hover {
+.l-btn:hover {
   background-color: #e6e6e6;
 }
-.s-btn:focus {
+.l-btn:focus {
   outline: none;
 }
-.btn-main {
+.l-btn-light {
+  box-sizing: border-box;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 2px;
   background-color: #ffffff;
-  padding: 10px;
-  border: 1px solid #525252;
+  border: 1px solid #767676;
+}
+.l-btn-light:hover {
+  background-color: #e6e6e6;
+}
+.l-btn-light:focus {
+  outline: none;
+}
+.l-btn-light:hover {
+  background-color: #f2f2f2;
+}
+.l-btn-light:active {
+  background-color: #e6e6e6;
+}
+.l-btn-dark {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #262626;
+  border: 1px solid #767676;
+}
+.l-btn-dark:hover {
+  background-color: #e6e6e6;
+}
+.l-btn-dark:focus {
+  outline: none;
+}
+.l-btn-dark:hover {
+  background-color: #191919;
+}
+.l-btn-dark:active {
+  background-color: #0c0c0c;
+}
+.l-btn-main {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 2px;
   background-color: #1a75ff;
   color: #fff;
-  border: none;
+  border: 1px solid #1a75ff;
 }
-.btn-main:hover {
+.l-btn-main:hover {
   background-color: #e6e6e6;
 }
-.btn-main:focus {
+.l-btn-main:focus {
   outline: none;
 }
-.btn-main:hover {
+.l-btn-main:hover {
   background-color: #005be6;
 }
-.btn-main:active {
+.l-btn-main:active {
   background-color: #0051cd;
+}
+.l-btn-success {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #25be66;
+  border: 1px solid #25be66;
+}
+.l-btn-success:hover {
+  background-color: #e6e6e6;
+}
+.l-btn-success:focus {
+  outline: none;
+}
+.l-btn-success:hover {
+  background-color: #1d934f;
+}
+.l-btn-success:active {
+  background-color: #197e44;
+}
+.l-btn-danger {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #ff2727;
+  border: 1px solid #ff2727;
+}
+.l-btn-danger:hover {
+  background-color: #e6e6e6;
+}
+.l-btn-danger:focus {
+  outline: none;
+}
+.l-btn-danger:hover {
+  background-color: #f30000;
+}
+.l-btn-danger:active {
+  background-color: #d90000;
 }
 html,
 body {
