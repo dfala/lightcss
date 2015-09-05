@@ -1,3 +1,5 @@
+@placeholder-color: #949292;
+
 .l-input {
   padding: @input-padding;
   margin: 20px 0;
@@ -9,4 +11,17 @@
     outline: none;
     border: 1px solid @cl-main;
   }
+}
+
+::-webkit-input-placeholder {
+   color: @placeholder-color;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: @placeholder-color;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: @placeholder-color;
+}
+:-ms-input-placeholder {
+   color: @placeholder-color;
 }
