@@ -63,6 +63,12 @@ footer {
   z-index: 20;
   position: relative;
 }
+.www-checks {
+  margin: 20px auto;
+}
+.www-checks span {
+  margin-right: 35px;
+}
 /*********************/
 /*** CSS FRAMEWORK ***/
 html,
@@ -249,6 +255,7 @@ pre {
 }
 .l-form button {
   margin-top: 10px;
+  display: block;
 }
 .l-input-text {
   padding: 11px 17px;
@@ -283,6 +290,17 @@ textarea {
 textarea:focus {
   outline: none;
   border: 1px solid #008cba;
+}
+.l-input-check {
+  margin: 0 10px 0 0;
+  width: 1.1em;
+  height: 1.1em;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 10px 0 0;
+  width: 1.1em;
+  height: 1.1em;
 }
 ::-webkit-input-placeholder {
   color: #949292;
