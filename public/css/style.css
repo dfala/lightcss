@@ -97,6 +97,9 @@ button {
 input {
   font-size: 1em;
 }
+textarea {
+  font-size: 1em;
+}
 a {
   color: #008cba;
   text-decoration: none;
@@ -247,14 +250,37 @@ pre {
 .l-form button {
   margin-top: 10px;
 }
-.l-input {
+.l-input-text {
   padding: 11px 17px;
   margin: 20px 0;
   width: 100%;
   border-radius: 2px;
   border: 1px solid #9a9797;
 }
-.l-input:focus {
+.l-input-text:focus {
+  outline: none;
+  border: 1px solid #008cba;
+}
+input[type="text"] {
+  padding: 11px 17px;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #9a9797;
+}
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid #008cba;
+}
+textarea {
+  padding: 11px 17px;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #9a9797;
+  max-width: 100%;
+}
+textarea:focus {
   outline: none;
   border: 1px solid #008cba;
 }
