@@ -350,6 +350,7 @@ input[type="checkbox"] + .l-chk-lbl:before {
   content: '\f096';
   font-family: 'FontAwesome';
   font-size: 1.2em;
+  font-weight: bold;
   color: #9a9797;
 }
 input[type="checkbox"] + .l-chk-lbl:before:hover {
