@@ -9,6 +9,18 @@ html,
 body {
   background-color: #eee;
 }
+.title {
+  font-size: 1.23em;
+  border-bottom: 1px solid #ecf1f8;
+  color: #5B5B5B;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: right;
+}
+.title#font-title {
+  margin-top: 0;
+}
 hr {
   border-bottom: none;
   border-top: 1px solid #D5D5D5;
@@ -33,7 +45,7 @@ footer {
 }
 .wrapper #side-menu {
   width: 200px;
-  background-color: #ECF1F8;
+  background-color: #ecf1f8;
   border: 1px solid #cfd6e0;
   box-shadow: 0 0 2px 0px #CFD6E0;
   font-size: 0.9em;
