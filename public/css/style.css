@@ -14,9 +14,10 @@ body {
   border-bottom: 1px solid #ecf1f8;
   color: #5B5B5B;
   font-weight: 100;
-  padding: 20px;
   text-transform: uppercase;
   text-align: right;
+  padding: 20px;
+  margin: 50px 0 20px;
 }
 .title#font-title {
   margin-top: 0;
@@ -37,6 +38,7 @@ footer {
   width: 100%;
   max-width: 1000px;
   padding-left: 200px;
+  padding-top: 130px;
   margin: 0 auto;
   overflow: auto;
 }
@@ -54,6 +56,10 @@ footer {
   top: 150px;
   left: 10%;
   z-index: 10;
+}
+.wrapper #side-menu .active {
+  background-color: #008cba;
+  color: #fff;
 }
 .wrapper #side-menu > div {
   padding: 10px 15px;
@@ -414,6 +420,12 @@ input[type="radio"]:checked + .l-rdo-lbl:before {
 }
 .l-header img {
   max-height: 100%;
+}
+.l-header.fixed {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
 }
 html,
 body {

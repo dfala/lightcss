@@ -16,9 +16,10 @@ html, body {
   border-bottom: 1px solid @title-bg-color;
   color: #5B5B5B;
   font-weight: 100;
-  padding: 20px;
   text-transform: uppercase;
   text-align: right;
+  padding: 20px;
+  margin: 50px 0 20px;
 }
 
 .title#font-title {
@@ -45,6 +46,7 @@ footer {
 width: 100%;
   max-width: 1000px;
   padding-left: @side-menu-width;
+  padding-top: 130px;
   margin: 0 auto;
   overflow: auto;
 
@@ -66,14 +68,18 @@ width: 100%;
     left: 10%;
     z-index: 10;
 
+    .active {
+      background-color: @cl-main;
+      color: #fff;
+    }
+
     > div {
       // padding: 13px 17px;
       padding: 10px 15px;
       cursor: pointer;
       border-bottom: 1px solid #DEE3E8;
       &:hover {
-        background-color: @cl-main;
-        color: #fff;
+        .active;
       }
     }
 
