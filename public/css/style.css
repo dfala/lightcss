@@ -254,14 +254,14 @@ pre {
   margin-top: 10px;
   display: block;
 }
-.l-input-text {
+.l-input-mixin {
   padding: 11px 17px;
   margin: 20px 0;
   width: 100%;
   border-radius: 2px;
   border: 1px solid #9a9797;
 }
-.l-input-text:focus {
+.l-input-mixin:focus {
   outline: none;
   border: 1px solid #008cba;
 }
@@ -287,6 +287,24 @@ textarea {
 textarea:focus {
   outline: none;
   border: 1px solid #008cba;
+}
+select {
+  padding: 11px 17px;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #9a9797;
+  background-color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+select:focus {
+  outline: none;
+  border: 1px solid #008cba;
+}
+option {
+  padding: 11px 17px;
+  cursor: pointer;
 }
 ::-webkit-input-placeholder {
   color: #949292;

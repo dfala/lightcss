@@ -1,6 +1,6 @@
 @placeholder-color: #949292;
 
-.l-input-text {
+.l-input-mixin {
   padding: @input-padding;
   margin: 20px 0;
   width: 100%;
@@ -14,12 +14,24 @@
 }
 
 input[type="text"] {
-  .l-input-text;
+  .l-input-mixin;
 }
 
 textarea {
-  .l-input-text;
+  .l-input-mixin;
   max-width: 100%;
+}
+
+select {
+  .l-input-mixin;
+  background-color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+option {
+  padding: @input-padding;
+  cursor: pointer;
 }
 
 
