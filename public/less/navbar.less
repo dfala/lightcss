@@ -1,0 +1,89 @@
+.l-navbar-seperated {
+  height: 70px;
+  width: 100%;
+  background-color: @cl-main;
+  display: flex;
+  align-items: flex-end;
+
+  div {
+    color: white;
+    height: 50px;
+    width: 50px;
+
+  }
+
+  .l-left-box-example {
+    float: left;
+    width: 100%;
+    position: relative;
+    left: 4%;
+
+    div {
+      background-color: lighten(@cl-main, 10%);
+      border: @radius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: lighten(@cl-main, 20%);
+      }
+    }
+  }
+
+  .l-right-box-example {
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+
+    div {
+      background-color: lighten(@cl-main, 10%);
+      border-radius: @radius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: lighten(@cl-main, 20%);
+      }
+    }
+
+      div:nth-child(1) {
+          background-color: darken(@cl-main, 5%);
+          border-bottom: 5px solid darken(@cl-main, 20%);
+    }
+  }
+}
+
+.l-navbar-logo-centered {
+  height: 70px;
+  width: 100%;
+  background-color: @cl-main;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  div {
+    height: 50px;
+    width: 50px;
+    background-color: lighten(@cl-main, 10%);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: lighten(@cl-main, 20%);
+    }
+  }
+
+  div:nth-child(3) {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 5px;
+  }
+}
