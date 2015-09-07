@@ -73,16 +73,28 @@
 			<a href="http://www.google.com">Google Website &lt;a&gt;</a>
 
 			<hr />
-			<input type="text" placeholder="This is a text input field <input type='checkbox'>" />
+			<input type="text" placeholder="This is a text input field <input type='text'>" />
 
 			<hr />
 			<form class="l-form">
 				<input type="text" placeholder="This is an first in form" />
 				<input type="text" placeholder="This is last in form" />
 				<textarea placeholder="This is a &lt;textarea&gt;"></textarea>
+				<!-- CHECKBOX -->
 				<div class="www-checks">
-					<input type="checkbox" /> <span>&lt;input type="checkbox"&gt;</span>
-					<input class="l-radio" type="radio" /> <span>&lt;input type="radio"&gt;</span>
+					&lt;input type="checkbox"&gt; &lt;label class="l-chk-lbl"&gt;
+					<input type="checkbox" id="chk-1" checked>
+					<label for="chk-1" class="l-chk-lbl">one</label>
+					<input type="checkbox" id="chk-2">
+					<label for="chk-2" class="l-chk-lbl">two</label>
+				</div>
+				<!-- RADIO -->
+				<div class="www-checks">
+					&lt;input type="radio"&gt; &lt;label class="l-rdo-lbl"&gt;
+				  <input type="radio" id="rdo-1" name="rdo-grp" checked>
+				  <label for="rdo-1" class="l-rdo-lbl">one</label>
+				  <input type="radio" id="rdo-2" name="rdo-grp" >
+				  <label for="rdo-2" class="l-rdo-lbl">two</label>
 				</div>
 				<button class="l-btn-main">Submit form</button>
 			</form>
