@@ -81,7 +81,7 @@ footer {
   z-index: 20;
   position: relative;
 }
-.wrapper .side-menu-box-example {
+.wrapper .side-menu-box {
   height: 100px;
   width: 100px;
   position: absolute;
@@ -101,6 +101,9 @@ footer {
 }
 /*********************/
 /*** CSS FRAMEWORK ***/
+.l-hover-white {
+  color: #d9d9d9;
+}
 html,
 body {
   font-size: 16px;
@@ -533,76 +536,69 @@ body {
 .l-msg-danger i:hover {
   color: #d9d9d9;
 }
-.l-navbar-seperated {
+.l-header-separated {
   height: 70px;
   width: 100%;
-  background-color: #008cba;
+  background-color: #3d3c3c;
   display: flex;
   align-items: flex-end;
 }
-.l-navbar-seperated div {
+.l-header-separated div {
   color: white;
-  height: 50px;
+  height: 100%;
   width: 50px;
 }
-.l-navbar-seperated .l-left-box-example {
+.l-header-separated .l-left-box {
   float: left;
   width: 100%;
   position: relative;
   left: 4%;
 }
-.l-navbar-seperated .l-left-box-example div {
-  background-color: #00b2ed;
+.l-header-separated .l-left-box div {
   border: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
-.l-navbar-seperated .l-left-box-example div:hover {
-  background-color: #21c8ff;
-}
-.l-navbar-seperated .l-right-box-example {
+.l-header-separated .l-right-box {
   width: 50%;
   float: right;
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
 }
-.l-navbar-seperated .l-right-box-example div {
-  background-color: #00b2ed;
+.l-header-separated .l-right-box div {
   border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.l-navbar-seperated .l-right-box-example div:hover {
-  background-color: #21c8ff;
+.l-header-separated .l-right-box div:hover {
+  color: #d9d9d9;
 }
-.l-navbar-seperated .l-right-box-example div:nth-child(1) {
-  background-color: #0079a1;
-  border-bottom: 5px solid #003f54;
-}
-.l-navbar-logo-centered {
+.l-header-logo-centered {
   height: 70px;
   width: 100%;
-  background-color: #008cba;
+  background-color: #3d3c3c;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
-.l-navbar-logo-centered div {
-  height: 50px;
+.l-header-logo-centered div {
+  cursor: pointer;
+  height: 100%;
   width: 50px;
-  background-color: #00b2ed;
   text-align: center;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.l-navbar-logo-centered div:hover {
-  background-color: #21c8ff;
+.l-header-logo-centered div:hover {
+  color: #d9d9d9;
 }
-.l-navbar-logo-centered div:nth-child(3) {
+.l-header-logo-centered div:nth-child(3) {
   height: 60px;
   width: 60px;
   border-radius: 50%;

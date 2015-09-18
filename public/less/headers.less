@@ -1,73 +1,67 @@
-.l-navbar-seperated {
+.l-header-separated {
   height: 70px;
   width: 100%;
-  background-color: @cl-main;
+  background-color: @cl-dark;
   display: flex;
   align-items: flex-end;
 
   div {
     color: white;
-    height: 50px;
+    height: 100%;
     width: 50px;
 
   }
 
-  .l-left-box-example {
+  .l-left-box {
     float: left;
     width: 100%;
     position: relative;
     left: 4%;
 
     div {
-      background-color: lighten(@cl-main, 10%);
+      // background-color: lighten(@cl-main, 10%);
       border: @radius;
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
 
-      &:hover {
-        background-color: lighten(@cl-main, 20%);
-      }
     }
   }
 
-  .l-right-box-example {
+  .l-right-box {
     width: 50%;
     float: right;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
 
     div {
-      background-color: lighten(@cl-main, 10%);
       border-radius: @radius;
       display: flex;
       align-items: center;
       justify-content: center;
 
       &:hover {
-        background-color: lighten(@cl-main, 20%);
+        .l-hover-white;
       }
     }
 
-      div:nth-child(1) {
-          background-color: darken(@cl-main, 5%);
-          border-bottom: 5px solid darken(@cl-main, 20%);
-    }
   }
 }
 
-.l-navbar-logo-centered {
+.l-header-logo-centered {
   height: 70px;
   width: 100%;
-  background-color: @cl-main;
+  background-color: @cl-dark;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 
   div {
-    height: 50px;
+    cursor: pointer;
+    height: 100%;
     width: 50px;
-    background-color: lighten(@cl-main, 10%);
     text-align: center;
     color: white;
     display: flex;
@@ -75,7 +69,7 @@
     align-items: center;
 
     &:hover {
-      background-color: lighten(@cl-main, 20%);
+      .l-hover-white
     }
   }
 
