@@ -150,6 +150,25 @@ a:hover {
 button {
   cursor: pointer;
   margin: 10px 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 2px;
+  background-color: #e9eaed;
+  border: 1px solid #9a9797;
+}
+button:hover {
+  background-color: #e6e6e6;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  background-color: #dbdde2;
+}
+button:active {
+  background-color: #cdcfd6;
 }
 .l-btn {
   box-sizing: border-box;
@@ -374,13 +393,7 @@ input[type="checkbox"] + .l-chk-lbl:before {
   font-family: 'FontAwesome';
   font-size: 1.2em;
   font-weight: bold;
-  color: #9a9797;
-}
-input[type="checkbox"] + .l-chk-lbl:before:hover {
-  color: #817d7d;
-}
-input[type="checkbox"] + .l-chk-lbl:before:focus {
-  color: #817d7d;
+  color: #5d5d5d;
 }
 input[type="checkbox"]:checked + .l-chk-lbl:before {
   content: '\f046';
@@ -399,13 +412,7 @@ input[type="radio"] + .l-rdo-lbl:before {
   content: '\f10c';
   font-family: 'FontAwesome';
   font-size: 1.2em;
-  color: #9a9797;
-}
-input[type="radio"] + .l-rdo-lbl:before:hover {
-  color: #817d7d;
-}
-input[type="radio"] + .l-rdo-lbl:before:focus {
-  color: #817d7d;
+  color: #5d5d5d;
 }
 input[type="radio"]:checked + .l-rdo-lbl:before {
   content: '\f192';
