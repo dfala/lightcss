@@ -124,7 +124,9 @@ h5 {
   font-size: 1.1em;
 }
 h6 {
-  font-size: 1.06em;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
   margin: 1.69em 0;
 }
 p {
