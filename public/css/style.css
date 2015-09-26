@@ -300,7 +300,19 @@ pre {
   padding: 20px;
   font-family: monospace;
   letter-spacing: -1px;
+  line-height: 22px;
   word-wrap: break-word;
+}
+pre.override-pre {
+  background-color: inherit;
+  color: inherit;
+  padding: 0;
+  line-height: inherit;
+  letter-spacing: normal;
+  letter-spacing: 1px;
+}
+pre.override-pre .hljs-title {
+  color: #4C4C4C;
 }
 .l-form :first-child {
   margin-top: 0px;

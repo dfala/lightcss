@@ -7,5 +7,19 @@ pre {
 
   font-family: monospace;
   letter-spacing: -1px;
+  line-height: 22px;
   word-wrap: break-word;
+}
+
+pre.override-pre {
+  background-color: inherit;
+  color: inherit;
+  padding: 0;
+  line-height: inherit;
+  letter-spacing: normal;
+  letter-spacing: 1px;
+
+  .hljs-title {
+    color: #4C4C4C;
+  }
 }
