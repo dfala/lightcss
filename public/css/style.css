@@ -336,7 +336,8 @@ pre.override-pre .hljs-title {
   outline: none;
   border: 1px solid #008cba;
 }
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   padding: 11px 17px;
   margin: 20px 0;
   width: 100%;
@@ -344,7 +345,8 @@ input[type="text"] {
   border: 1px solid #9a9797;
   min-height: 46px;
 }
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
   outline: none;
   border: 1px solid #008cba;
 }
