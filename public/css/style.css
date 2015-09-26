@@ -330,6 +330,7 @@ pre.override-pre .hljs-title {
   width: 100%;
   border-radius: 2px;
   border: 1px solid #9a9797;
+  min-height: 46px;
 }
 .l-input-mixin:focus {
   outline: none;
@@ -341,6 +342,7 @@ input[type="text"] {
   width: 100%;
   border-radius: 2px;
   border: 1px solid #9a9797;
+  min-height: 46px;
 }
 input[type="text"]:focus {
   outline: none;
@@ -352,6 +354,7 @@ textarea {
   width: 100%;
   border-radius: 2px;
   border: 1px solid #9a9797;
+  min-height: 46px;
   max-width: 100%;
 }
 textarea:focus {
@@ -364,6 +367,7 @@ select {
   width: 100%;
   border-radius: 2px;
   border: 1px solid #9a9797;
+  min-height: 46px;
   background-color: #fff;
   font-size: 1em;
   cursor: pointer;
