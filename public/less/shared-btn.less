@@ -6,11 +6,13 @@ button {
 
 .l-btn {
   @this-bg-color: #fff;
+  @this-height: 42px;
   box-sizing: border-box;
   background-color: @this-bg-color;
   padding: 11px 17px;
   border: none;
   border-radius: @radius;
+  line-height: @this-height;
 
   &:hover {
     background-color: darken(@this-bg-color, 10%);
