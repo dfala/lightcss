@@ -142,6 +142,7 @@ textarea {
   font-size: 1em;
 }
 a {
+  cursor: pointer;
   color: #008cba;
   text-decoration: none;
 }
@@ -162,6 +163,7 @@ button {
 }
 button:hover {
   background-color: #e6e6e6;
+  color: #ffffff;
 }
 button:focus {
   outline: none;
@@ -181,6 +183,7 @@ button:active {
 }
 .l-btn:hover {
   background-color: #e6e6e6;
+  color: #ffffff;
 }
 .l-btn:focus {
   outline: none;
@@ -196,6 +199,7 @@ button:active {
 }
 .l-btn-light:hover {
   background-color: #e6e6e6;
+  color: #ffffff;
 }
 .l-btn-light:focus {
   outline: none;
@@ -218,6 +222,7 @@ button:active {
 }
 .l-btn-dark:hover {
   background-color: #e6e6e6;
+  color: #ffffff;
 }
 .l-btn-dark:focus {
   outline: none;
@@ -240,6 +245,7 @@ button:active {
 }
 .l-btn-main:hover {
   background-color: #e6e6e6;
+  color: #ffffff;
 }
 .l-btn-main:focus {
   outline: none;
@@ -262,6 +268,7 @@ button:active {
 }
 .l-btn-success:hover {
   background-color: #e6e6e6;
+  color: #ffffff;
 }
 .l-btn-success:focus {
   outline: none;
@@ -284,6 +291,7 @@ button:active {
 }
 .l-btn-danger:hover {
   background-color: #e6e6e6;
+  color: #ffffff;
 }
 .l-btn-danger:focus {
   outline: none;
