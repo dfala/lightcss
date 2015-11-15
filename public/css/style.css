@@ -158,7 +158,6 @@ button {
   padding: 11px 17px;
   border: none;
   border-radius: 2px;
-  line-height: 42px;
   background-color: #e9eaed;
   border: 1px solid #9a9797;
 }
@@ -181,7 +180,6 @@ button:active {
   padding: 11px 17px;
   border: none;
   border-radius: 2px;
-  line-height: 42px;
 }
 .l-btn:hover {
   background-color: #e6e6e6;
@@ -196,7 +194,6 @@ button:active {
   padding: 11px 17px;
   border: none;
   border-radius: 2px;
-  line-height: 42px;
   background-color: #e9eaed;
   border: 1px solid #9a9797;
 }
@@ -219,7 +216,6 @@ button:active {
   padding: 11px 17px;
   border: none;
   border-radius: 2px;
-  line-height: 42px;
   color: #fff;
   background-color: #3d3c3c;
   border: 1px solid #3d3c3c;
@@ -243,7 +239,6 @@ button:active {
   padding: 11px 17px;
   border: none;
   border-radius: 2px;
-  line-height: 42px;
   background-color: #008cba;
   color: #fff;
   border: 1px solid #008cba;
@@ -267,7 +262,6 @@ button:active {
   padding: 11px 17px;
   border: none;
   border-radius: 2px;
-  line-height: 42px;
   color: #fff;
   background-color: #3bd57d;
   border: 1px solid #3bd57d;
@@ -291,7 +285,6 @@ button:active {
   padding: 11px 17px;
   border: none;
   border-radius: 2px;
-  line-height: 42px;
   color: #fff;
   background-color: #ff5f5f;
   border: 1px solid #ff5f5f;
@@ -308,6 +301,14 @@ button:active {
 }
 .l-btn-danger:active {
   background-color: #ff1313;
+}
+a.l-btn-danger,
+a.l-btn-success,
+a.l-btn-dark,
+a.l-btn-light,
+a.l-btn-main,
+a.l-btn {
+  line-height: 42px;
 }
 pre {
   background-color: #e8e8e8;
