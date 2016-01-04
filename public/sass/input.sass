@@ -1,0 +1,112 @@
+.l-form {
+  input {
+    margin: 10px 0;
+  }
+
+  button {
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+@placeholder-color: #949292;
+
+.l-input-mixin {
+  padding: @input-padding;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: @radius;
+  border: @df-border;
+  min-height: 46px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid @cl-main;
+  }
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  .l-input-mixin;
+}
+
+textarea {
+  .l-input-mixin;
+  max-width: 100%;
+}
+
+select {
+  .l-input-mixin;
+  background-color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  height: 45px;
+  color: @placeholder-color;
+}
+
+option {
+  padding: @input-padding;
+  cursor: pointer;
+}
+
+
+::-webkit-input-placeholder {
+   color: @placeholder-color;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: @placeholder-color;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: @placeholder-color;
+}
+:-ms-input-placeholder {
+   color: @placeholder-color;
+}
+
+@check-color: #5D5D5D;
+
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+input[type="checkbox"], .l-chk-lbl {
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + .l-chk-lbl:before {
+  margin-right: 10px;
+  content: '\f096';
+  font-family: 'FontAwesome';
+  font-size: 1.2em;
+  font-weight: bold;
+  color: @check-color;
+}
+
+input[type="checkbox"]:checked + .l-chk-lbl:before {
+  content: '\f046';
+}
+
+
+
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+input[type="radio"], .l-rdo-lbl {
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+input[type="radio"] + .l-rdo-lbl:before {
+  margin-right: 10px;
+  content: '\f10c';
+  font-family: 'FontAwesome';
+  font-size: 1.2em;
+  color: @check-color;
+}
+
+input[type="radio"]:checked + .l-rdo-lbl:before {
+  content: '\f192';
+}

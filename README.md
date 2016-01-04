@@ -1,9 +1,9 @@
 # lightcss
-Light CSS is an open source lightweight css framework
+Light CSS is an open source lightweight CSS framework
 #
-* cd to directory after fork and run: `npm install`
-* run `grunt`
+* install Ruby, if needed
+* run `sudo gem install sass`, if needed
+* run `npm install`
+* run `npm run build`
 
 DOCS AND LIVE DEMO: https://dfala.github.io/lightcss
-
-##### More information to come... soon.
