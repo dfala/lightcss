@@ -5,12 +5,15 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass --watch ./public/sass/main.scss:./public/css/main.css"
+    "sass": "sass --watch ./public/sass/main.scss:./public/css/main.css",
+    "prefix": "postcss -u autoprefixer ./public/css/main.css -o ./public/css/main.css"
   },
   "author": "Daniel Falabella, Mikkel Davis",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.2.3",
     "node-sass": "^3.4.2",
+    "postcss-cli": "^2.3.3",
     "sass": "^0.5.0"
   },
   "dependencies": {},

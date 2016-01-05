@@ -1,0 +1,38 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+
+// FONTS
+
+// ------- FONT WEIGHTS -------
+.light { font-weight: 300; }
+.normal { font-weight: 400; }
+.medium { font-weight: 500; }
+.bold { font-weight: 700; }
+@mixin light { @extend .light; }
+@mixin normal { @extend .normal; }
+@mixin medium { @extend .medium; }
+@mixin bold { @extend .bold; }
+
+// ------- GENERAL RULES -------
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    @include normal();
+    color: color(gray);
+    line-height: 1.5em;
+}
+
+// ------- FONT SIZES -------
+/* base (1em) font-size set at 16px above */
+h1 { font-size: 2.00em; }
+h2 { font-size: 1.50em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.17em; }
+h5 { font-size: 0.83em; }
+h6 { font-size: 0.75em; }
+
+h6 {
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1.69em 0;
+}

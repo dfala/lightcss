@@ -11,6 +11,59 @@ html, body {
   background-color: #eee;
 }
 
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.l-header-separated {
+  height: 70px;
+  width: 100%;
+  //background-color: @cl-dark
+  display: flex;
+  align-items: flex-end;
+  div {
+    color: white;
+    height: 100%;
+    width: 50px;
+  }
+  .l-left-box {
+    float: left;
+    width: 100%;
+    position: relative;
+    left: 4%;
+    div {
+      // background-color: lighten(@cl-main, 10%)
+      //border: @radius
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+
+  .l-right-box {
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+
+    div {
+      //border-radius: @radius
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        .l-hover-white {}
+      }
+    }
+  }
+}
+
 .title {
   font-size: @h3-size;
   border-bottom: 1px solid @title-bg-color;
