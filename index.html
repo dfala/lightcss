@@ -5,21 +5,21 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--  Android Chrome Theme  -->
-	<meta name="theme-color" content="#999999">
+	<meta name="theme-color" content="#008CBA">
 
 	<!-- STYLING -->
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="public/css/main.css">
 
 </head>
 <body>
 
 	<header class="l-header">
-		<img src="public/css/images/logo.png" alt="Light CSS logo" />
+		<img src="public/images/logo.png" alt="Light CSS logo" />
 	</header>
-
 
 	<div class="wrapper">
 
@@ -36,91 +36,83 @@
 	  <div class="l-container">
 			<div class="title" id="font-title">Fonts</div>
 
-	    <h1>This is a &lt;h1&gt;</h1>
-	    <h2>This is a &lt;h2&gt;</h2>
-	    <h3>This is a &lt;h3&gt;</h3>
-	    <h4>This is a &lt;h4&gt;</h4>
-	    <h5>This is a &lt;h5&gt;</h5>
-	    <h6>This is a &lt;h6&gt;</h6>
-	    <p>
-	      This is a paragraph &lt;p&gt;
-	    </p>
+	    <h1>&lt;h1&gt; heading</h1>
+	    <h2>&lt;h2&gt; heading</h2>
+	    <h3>&lt;h3&gt; heading</h3>
+	    <h4>&lt;h4&gt; heading</h4>
+	    <h5>&lt;h5&gt; heading</h5>
+	    <h6>&lt;h6&gt; heading</h6>
 
 
 			<div class="title" id="links-title">Links</div><br><br>
-			<a href="http://www.google.com" target="_blank">&lt;a&gt; Google Website &lt;/a&gt;</a>
+			<a href="http://www.google.com" target="_blank">&lt;a&gt; hyperlink &lt;/a&gt;</a>
 
 
 			<div class="title" id="buttons-title">Buttons</div> <br><br>
 
 			<button>&ltbutton&gt</button>
-			<button class="l-btn-dark">.l-btn-dark</button>
-			<button class="l-btn-success">.l-btn-success</button>
-			<button class="l-btn-main">.l-btn-main</button>
-			<button class="l-btn-danger">.l-btn-danger</button>
+			<button class="l-btn--dark">.l-btn-dark</button>
+			<button class="l-btn--green">.l-btn-green</button>
+			<button class="l-btn--blue">.l-btn-blue</button>
+			<button class="l-btn--red">.l-btn-red</button>
 
 			<br/>
 			<h6>a-link with same button class act the same:</h6>
-			<a class="l-btn-dark">&lt;a class=".l-btn-dark"&gt;&lt;/a&gt;</a>
+			<a class="l-btn">&lt;a class="l-btn"&gt;&lt;/a&gt;</a>
 
 
 			<div class="title" id="messages-title">Messages</div>
 
-			<div class="l-msg-light">
-				This a light message. .l-msg-light
+			<div class="l-msg">
+				.l-msg
 				<i class="fa fa-times"></i>
 			</div>
-			<div class="l-msg-dark">
-				This a dark message. .l-msg-dark
+			<div class="l-msg l-msg--light">
+				.l-msg .l-msg--light
 				<i class="fa fa-times"></i>
 			</div>
-			<div class="l-msg-success">
-				This a success message. .l-msg-success
+			<div class="l-msg l-msg--dark">
+				.l-msg .l-msg--dark
 				<i class="fa fa-times"></i>
 			</div>
-			<div class="l-msg-main">
-				This a main message. .l-msg-main
+			<div class="l-msg l-msg--success">
+				.l-msg .l-msg--success
 				<i class="fa fa-times"></i>
 			</div>
-			<div class="l-msg-danger">
-				This a danger message. .l-msg-danger
+			<div class="l-msg l-msg--danger">
+				.l-msg .l-msg--danger
 				<i class="fa fa-times"></i>
 			</div>
 
 
 
-			<div class="title" id="inputs-title">Inputs/Forms</div><br><br>
-			<input type="text" placeholder="Input field type='text'/'password'/'email'" />
-
-			<form class="l-form">
-				<h6>A form:</h6>
-				<input type="text" placeholder="This is an first in form" />
-				<input type="text" placeholder="This is last in form" />
-
-				<textarea placeholder="This is a &lt;textarea&gt;"></textarea>
-				<!-- CHECKBOX -->
-				<div class="www-checks">
-					&lt;input type="checkbox"&gt; &lt;label class="l-chk-lbl"&gt;
-					<input type="checkbox" id="chk-1" checked>
-					<label for="chk-1" class="l-chk-lbl">one</label>
-					<input type="checkbox" id="chk-2">
-					<label>two</label>
-				</div>
-				<!-- RADIO -->
-				<div class="www-checks">
-					&lt;input type="radio"&gt; &lt;label class="l-rdo-lbl"&gt;
-				  <input type="radio" id="rdo-1" name="rdo-grp" checked>
-				  <label for="rdo-1" class="l-rdo-lbl">one</label>
-				  <input type="radio" id="rdo-2" name="rdo-grp" >
-				  <label for="rdo-2" class="l-rdo-lbl">two</label>
-				</div>
+			<div class="title" id="inputs-title">Inputs</div>
+			<form>
+				<input placeholder="&lt;input&gt; ..." />
+				<textarea placeholder="&lt;textarea&gt; ..."></textarea>
 				<!-- SELECT -->
 				<select>
-					<option>This is option 1</option>
-					<option>This is option 2</option>
-					<option>This is option 3</option>
+					<option selected disabled>&lt;select&gt; ...</option>
+					<option>option 1</option>
+					<option>option 2</option>
+					<option>option 3</option>
 				</select>
-				<button class="l-btn-main">Submit form</button>
+				<!-- CHECKBOX -->
+				<h6 class="lowercase">&lt;input type="checkbox"&gt;</h6>
+				<div class="www-checks">
+					<input type="checkbox" id="chk-1" checked>
+					<label for="chk-1" class="l-lbl--chk">&lt;label class="l-lbl--chk" for="chk-1"&gt;</label>
+					<input type="checkbox" id="chk-2">
+					<label for="chk-2" class="l-lbl--chk">&lt;label class="l-lbl--chk" for="chk-2"&gt;</label>
+				</div>
+				<!-- RADIO -->
+				<h6 class="lowercase">&lt;input type="radio"&gt;</h6>
+				<div class="www-checks">
+				  <input type="radio" id="rdo-1" name="rdo-grp" checked>
+				  <label for="rdo-1" class="l-lbl--rdo">&lt;label class="l-lbl--rdo" for="rdo-1"&gt;</label>
+				  <input type="radio" id="rdo-2" name="rdo-grp" >
+				  <label for="rdo-2" class="l-lbl--rdo">&lt;label class="l-lbl--rdo" for="rdo-2"&gt;</label>
+				</div>
 			</form>
 
 

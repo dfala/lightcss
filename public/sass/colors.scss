@@ -1,14 +1,17 @@
-// ------- COLOR VARIABLES -------
-
 // Set 'theme-color' in <head> of src/index.html to the sites primary color
 
+// ------- COLOR VARIABLES -------
 $colors: (
-    grayLt: #e9eaed,
-    gray: #9A9797,
-    grayDk: #3D3C3C,
+    gray-lter: #EAEAEA,
+    gray-lt: #B1B1B1,
+    gray: #7E7E7E,
+    gray-dk: #3C3C3C,
+    gray-dkest: #1C1C1C,
     red: #FF5F5F,
     green: #3BD57D,
+    blue-lt: #33BFED,
     blue: #008CBA,
+    blue-dk: #005987,
 );
 
 // For calling colors in the css instead of a $xyz variable
@@ -21,12 +24,13 @@ $colors: (
     @return map-get($colors, $color);
 }
 
+// ------- COLOR UTILITY CLASSES -------
 // Generate color, and color-bg classes for each color defined above
 @each $name, $color in $colors {
     .#{$name} {
         color: $color;
     }
-    .#{$name}Bg {
+    .#{$name}-bg {
         background-color: $color;
     }
 }

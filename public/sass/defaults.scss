@@ -1,20 +1,62 @@
 html, body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// Clearing
+@mixin clear {
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+@mixin clearfix {
+    &:before, &:after {
+        content: '\0020';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        zoom: 1;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// List styling
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin disc {
+    list-style: disc outside;
+    margin-left: 1.5em;
+}
+
+// images can't be wider than their containers
+img { max-width: 100%; }
+
+// tables inherit font size (some browsers set a default table font size)
+table { font-size: inherit; }
+
+
 .l-container {
   width: 960px;
-
-  //@md-screen
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
+  margin: 1.5em auto;
+  background-color: white;
+  padding: 1.5em;
 }
 
 @mixin border {
-  border: 1px solid color(gray-dk);
+  border: 1px solid color(gray-lt);
 }
 
 @mixin border-radius {
@@ -22,14 +64,5 @@ html, body {
 }
 
 @mixin shadow {
-  shadow: 0 0 2px 1px #D8D8D8;
-}
-
-// SPACING
-//@input-padding: 11px 17px
-//@lg-padding: 20px
-//@margin-hd-ft: 60px
-
-@mixin l-hover-white {
-  color: darken(#fff, 15%);
+  shadow: 0 0 2px 1px color(gray-lt);
 }

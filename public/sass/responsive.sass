@@ -1,6 +1,7 @@
 // Media Queries
-@md-screen: 900px;
-@sm-screen: 600px;
+$lg-screen: 1200px;
+$md-screen: 960px;
+$sm-screen: 640px;
 
 @media (max-width: @md-screen) {
   .l-container {
@@ -16,4 +17,30 @@
       display: none;
     }
   }
+}
+
+
+// Large Desktop (Above 1200px)
+@media (min-width: $lg-screen) {
+
+}
+
+// Anything smaller than 1200px
+@media (max-width: $lg-screen) {
+
+}
+
+// Tablet and Phone (anything smaller than 960px)
+@media (max-width: $md-screen) {
+
+}
+
+// Portrait tablet to landscape and desktop
+@media (min-width: $sm-screen) and (max-width: $md-screen) {
+
+}
+
+// Landscape phones and down
+@media (max-width: $sm-screen) {
+
 }
