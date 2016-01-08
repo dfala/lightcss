@@ -2,40 +2,39 @@
 <html>
 <head>
 	<title>CSS Light | a light CSS framework</title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--  Android Chrome Theme  -->
-	<meta name="theme-color" content="#008CBA">
+	<meta name="theme-color" content="#008CBA"> <!--  Android Chrome Theme  -->
 
-	<!-- STYLING -->
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="public/css/main.css">
+	<link rel="stylesheet" href="public/css/demo.css">
 
 </head>
 <body>
 
 	<header class="l-header">
-		<img src="public/images/logo.png" alt="Light CSS logo" />
+		<!-- <div class="l-container"> -->
+			<!-- <img src="public/images/logo.png" alt="Light CSS logo"> -->
+		<!-- </div> -->
 	</header>
 
-	<div class="wrapper">
+	<div class="l-container">
 
-		<div id="side-menu">
-			<div id="font" class="active">Fonts</div>
+		<div class="side-menu" id="side-menu">
+			<div id="fonts" class="active">Fonts</div>
 			<div id="buttons">Buttons</div>
 			<div id="messages">Messages</div>
 			<div id="inputs">Inputs/Forms</div>
 			<div id="headers">Headers</div>
 		</div>
 
+		<div class="side-menu--placeholder">placeholder</div>
 
+	  <div>
 
-	  <div class="l-container">
-			<div class="title" id="font-title">Fonts</div>
-
+			<h4 class="section-title" id="fonts-title">Fonts</h4>
 	    <h1>&lt;h1&gt; heading</h1>
 	    <h2>&lt;h2&gt; heading</h2>
 	    <h3>&lt;h3&gt; heading</h3>
@@ -43,26 +42,20 @@
 	    <h5>&lt;h5&gt; heading</h5>
 	    <h6>&lt;h6&gt; heading</h6>
 
-
-			<div class="title" id="links-title">Links</div><br><br>
-			<a href="http://www.google.com" target="_blank">&lt;a&gt; hyperlink &lt;/a&gt;</a>
-
-
-			<div class="title" id="buttons-title">Buttons</div> <br><br>
-
-			<button>&ltbutton&gt</button>
+			<h4 class="section-title" id="buttons-title">Buttons</h4>
+			<button>&lt;button&gt;</button>
 			<button class="l-btn--dark">.l-btn-dark</button>
 			<button class="l-btn--green">.l-btn-green</button>
 			<button class="l-btn--blue">.l-btn-blue</button>
 			<button class="l-btn--red">.l-btn-red</button>
 
-			<br/>
-			<h6>a-link with same button class act the same:</h6>
+			<h4 class="section-title">Links</h4>
+			<a href="http://www.google.com" target="_blank">&lt;a&gt; hyperlink &lt;/a&gt;</a>
+			<h6>&lt;a&gt; link with button class:</h6>
 			<a class="l-btn">&lt;a class="l-btn"&gt;&lt;/a&gt;</a>
 
 
-			<div class="title" id="messages-title">Messages</div>
-
+			<h4 class="section-title" id="messages-title">Messages</h4>
 			<div class="l-msg">
 				.l-msg
 				<i class="fa fa-times"></i>
@@ -84,9 +77,7 @@
 				<i class="fa fa-times"></i>
 			</div>
 
-
-
-			<div class="title" id="inputs-title">Inputs</div>
+			<h4 class="section-title" id="inputs-title">Inputs</h4>
 			<form>
 				<input placeholder="&lt;input&gt; ..." />
 				<textarea placeholder="&lt;textarea&gt; ..."></textarea>
@@ -99,7 +90,7 @@
 				</select>
 				<!-- CHECKBOX -->
 				<h6 class="lowercase">&lt;input type="checkbox"&gt;</h6>
-				<div class="www-checks">
+				<div>
 					<input type="checkbox" id="chk-1" checked>
 					<label for="chk-1" class="l-lbl--chk">&lt;label class="l-lbl--chk" for="chk-1"&gt;</label>
 					<input type="checkbox" id="chk-2">
@@ -107,7 +98,7 @@
 				</div>
 				<!-- RADIO -->
 				<h6 class="lowercase">&lt;input type="radio"&gt;</h6>
-				<div class="www-checks">
+				<div>
 				  <input type="radio" id="rdo-1" name="rdo-grp" checked>
 				  <label for="rdo-1" class="l-lbl--rdo">&lt;label class="l-lbl--rdo" for="rdo-1"&gt;</label>
 				  <input type="radio" id="rdo-2" name="rdo-grp" >
@@ -116,11 +107,11 @@
 			</form>
 
 
-			<div class="title" id="pre-title">Pre tag</div><br><br>
+			<h4 class="section-title" id="pre-title">Pre</h4>
 			<pre>console.log("this is a &lt;pre&gt; tag in action")</pre>
 
 
-			<div class="title" id="headers-title">Headers</div><br><br>
+			<h4 class="section-title" id="headers-title">Headers</h4>
 			<h6>Header default view:</h6>
 
 			<header class="l-header-separated">
@@ -146,6 +137,7 @@
 &#60;/header></code></pre>
 
 		</div>
+
 	</div>
 
 

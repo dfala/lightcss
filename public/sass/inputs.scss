@@ -1,0 +1,80 @@
+$placeholder-color: color(gray-lt);
+::-webkit-input-placeholder { color: $placeholder-color; }
+:-moz-placeholder { color: $placeholder-color; } // Firefox 18-
+::-moz-placeholder { color: $placeholder-color; } // Firefox 19+
+:-ms-input-placeholder { color: $placeholder-color; }
+
+@mixin input {
+    display: inline-block;
+    padding: 0.625em 1em;
+    margin: 1em auto;
+    width: 100%;
+    min-height: 2em;
+    @include border();
+    @include border-radius();
+    font-family: inherit;
+    font-size: 1em;
+
+    &:focus {
+        outline: none !important;
+        border: 1px solid color(blue);
+        box-shadow: 0,0,0,transparent;
+        text-decoration: none;
+    }
+}
+
+input, input[type="name"], input[type="email"], input[type="text"],
+input[type="tel"], input[type="submit"], input[type="number"],
+input[type="password"], input[type="url"], textarea, select {
+    @include input();
+}
+
+input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus {
+    outline: none;
+    box-shadow: 0,0,0,transparent;
+}
+
+textarea {
+    max-width: 100%;
+    min-height: 4em;
+}
+
+select {
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+    color: $placeholder-color;
+}
+
+option { color: color(gray-dk); }
+
+input[type="checkbox"], input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.l-lbl--chk, .l-lbl--rdo {
+    margin: 0 1em 1em 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + .l-lbl--chk:before,
+input[type="radio"] + .l-lbl--rdo:before {
+    display: inline-block;
+    width: 1em;
+    margin-right: 1.25em;
+    font-family: 'FontAwesome';
+    font-size: 1.2em;
+    color: color(gray);
+}
+
+input[type="checkbox"] + .l-lbl--chk:before {
+    content: '\f096';
+    font-weight: bold;
+}
+
+input[type="radio"] + .l-lbl--rdo:before { content: '\f10c'; }
+
+input[type="checkbox"]:checked + .l-lbl--chk:before { content: '\f046'; }
+
+input[type="radio"]:checked + .l-lbl--rdo:before { content: '\f192'; }

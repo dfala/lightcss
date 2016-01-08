@@ -1,0 +1,29 @@
+.l-msg {
+  margin: 1.5em 0;
+  padding: 1em;
+  border: none;
+  @include border-radius();
+  background-color: color(blue);
+  color: white;
+
+  .fa-times {
+      float: right;
+      cursor: pointer;
+      &:hover {
+          color: darken(white, 15%);
+      }
+  }
+
+  &--dark { background-color: color(gray-dk); }
+  &--success { background-color: color(green); }
+  &--danger { background-color: color(red); }
+  &--light {
+      background-color: color(gray-lter);
+      @include border();
+      color: color(gray-dk);
+
+      .fa-times:hover {
+          color: color(gray);
+      }
+  }
+}

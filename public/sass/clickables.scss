@@ -1,0 +1,95 @@
+.l-btn {
+    width: auto;
+    height: auto;
+    margin: 1em;
+    padding: 0.75em;
+    @include border();
+    @include border-radius();
+    background-color: color(gray-lter);
+    color: color(gray-dk);
+    font-size: 1em;
+
+    &:hover {
+        background-color: color(gray-lt);
+        color: color(gray-dk);
+    }
+
+    &:active { background-color: color(gray); }
+
+    &--light {
+        border: none;
+        background-color: white;
+        color: color(gray-dk);
+        &:hover {
+            background-color: darken(white, 10%);
+            color: color(gray-dk);
+        }
+        &:active { background-color: darken(white, 20%); }
+    }
+
+    &--dark {
+        border: none;
+        background-color: color(gray-dk);
+        color: white;
+        &:hover {
+            background-color: darken(color(gray-dk), 10%);
+            color: white;
+        }
+        &:active { background-color: darken(color(gray-dk), 20%); }
+    }
+
+    &--blue {
+        border: none;
+        background-color: color(blue);
+        color: white;
+        &:hover {
+            background-color: darken(color(blue), 10%);
+            color: white;
+        }
+        &:active { background-color: darken(color(blue), 20%); }
+    }
+
+    &--green {
+        border: none;
+        background-color: color(green);
+        color: white;
+        &:hover {
+            background-color: darken(color(green), 10%);
+            color: white;
+        }
+        &:active { background-color: darken(color(green), 20%); }
+    }
+
+    &--red {
+        border: none;
+        background-color: color(red);
+        color: white;
+        &:hover {
+            background-color: darken(color(red), 10%);
+            color: white;
+        }
+        &:active { background-color: darken(color(red), 20%); }
+    }
+}
+
+button, input[type="submit"] {
+    @extend .l-btn;
+}
+
+a, button, input[type="submit"] {
+    cursor: pointer;
+    &:focus {
+        outline: none !important;
+        box-shadow: 0,0,0,transparent;
+        text-decoration: none;
+    }
+}
+
+a {
+    color: color(blue-dk);
+    text-decoration: none;
+
+    &:hover {
+        color: color(blue);
+    }
+}

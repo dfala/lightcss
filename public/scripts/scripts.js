@@ -4,7 +4,7 @@
       inputsElem    = $('#inputs'),
       messagesElem  = $('#messages'),
       buttonsElem   = $('#buttons'),
-      fontElem      = $('#font');
+      fontElem      = $('#fonts');
 
 
   // Smooth scrolling
@@ -25,7 +25,7 @@
   });
 
   fontElem.on('click', function () {
-    scrollTo('#font-title');
+    scrollTo('#fonts-title');
   });
 
 
@@ -45,7 +45,7 @@
   window.onscroll = function (e) {
 
     var scrollTop     = $(window).scrollTop(),
-        font          = ($('#font-title').offset().top) - scrollTop - 200,
+        font          = ($('#fonts-title').offset().top) - scrollTop - 200,
         buttons       = ($('#buttons-title').offset().top) - scrollTop - 200,
         messages      = ($('#messages-title').offset().top) - scrollTop - 200,
         inputs         = ($('#inputs-title').offset().top) - scrollTop - 200,

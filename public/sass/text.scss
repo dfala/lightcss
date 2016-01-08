@@ -33,29 +33,29 @@ body {
 
 h1, h2, h3, h4, h5, h6 { @include normal(); }
 h1 {
-    margin: 1.75em auto 1em;
     font-size: 2.625em; //42px
+    margin: 1.45em auto 1em;
 }
 h2 {
-    margin: 1.75em auto 1em;
     font-size: 2.250em; //36px
+    margin: 1.50em auto 1em;
 }
 h3 {
-    margin: 1.75em auto 1em;
-    font-size: 2.000em; //32px
+    font-size: 1.875em; //30px
+    margin: 1.55em auto 1em;
 }
 h4 {
-    margin: 1.75em auto 1em;
     font-size: 1.500em; //24px
+    margin: 1.60em auto 1em;
 }
 h5 {
-    margin: 1.75em auto 1em;
     font-size: 1.250em; //20px
+    margin: 1.65em auto 1em;
 }
 
 h6 {
-    margin: 1.75em auto 1em;
     font-size: 1.000em; //16px
     text-transform: uppercase;
     @include bold();
+    margin: 1.70em auto 1em;
 }

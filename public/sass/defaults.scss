@@ -47,14 +47,6 @@ img { max-width: 100%; }
 // tables inherit font size (some browsers set a default table font size)
 table { font-size: inherit; }
 
-
-.l-container {
-  width: 960px;
-  margin: 1.5em auto;
-  background-color: white;
-  padding: 1.5em;
-}
-
 @mixin border {
   border: 1px solid color(gray-lt);
 }
