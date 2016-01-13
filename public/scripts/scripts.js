@@ -35,23 +35,23 @@
     }, 750);
   }
 
-  // Make menu active
+  // Make menu item active
   function makeActive (elem) {
-    $("#side-menu>div").removeClass("active");
-    elem.addClass('active');
+    $('.side-menu__link').removeClass('side-menu__link--active');
+    elem.addClass('side-menu__link--active');
   }
 
 
   window.onscroll = function (e) {
 
     var scrollTop     = $(window).scrollTop(),
-        font          = ($('#fonts-title').offset().top) - scrollTop - 200,
+        fonts          = ($('#fonts-title').offset().top) - scrollTop - 200,
         buttons       = ($('#buttons-title').offset().top) - scrollTop - 200,
         messages      = ($('#messages-title').offset().top) - scrollTop - 200,
-        inputs         = ($('#inputs-title').offset().top) - scrollTop - 200,
+        inputs        = ($('#inputs-title').offset().top) - scrollTop - 200,
         headers       = ($('#headers-title').offset().top) - scrollTop - 200;
 
-    if (($(window).innerHeight() + scrollTop + 100) >= $("body").height()) {
+    if (($(window).innerHeight() + scrollTop + 100) >= $('body').height()) {
       makeActive(headersElem);
     } else if (headers <= 0) {
       makeActive(headersElem);
@@ -61,10 +61,10 @@
       makeActive(messagesElem);
     } else if (buttons <= 0) {
       makeActive(buttonsElem);
-    } else if (font <= 0) {
+    } else if (fonts <= 0) {
       makeActive(fontElem);
     }
-  }
+  };
 
 
 

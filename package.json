@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch ./public/sass/main.scss:./public/css/main.css",
-    "prefix": "postcss -u autoprefixer ./public/css/main.css -o ./public/css/main.css"
+    "sassdemo": "sass --watch ./public/css/demo.scss:./public/css/demo.css",
+    "prefix": "postcss -u autoprefixer ./public/css/main.css -o ./public/css/main.css",
+    "prefixdemo": "postcss -u autoprefixer ./public/css/demo.css -o ./public/css/demo.css"
   },
   "author": "Daniel Falabella, Mikkel Davis",
   "license": "ISC",

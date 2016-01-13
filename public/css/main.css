@@ -239,16 +239,16 @@
   padding-left: 0; }
 
 .gray-lter {
-  color: #EAEAEA; }
+  color: #EEEEEE; }
 
 .gray-lter-bg {
-  background-color: #EAEAEA; }
+  background-color: #EEEEEE; }
 
 .gray-lt {
-  color: #B1B1B1; }
+  color: #BEBEBE; }
 
 .gray-lt-bg {
-  background-color: #B1B1B1; }
+  background-color: #BEBEBE; }
 
 .gray {
   color: #7E7E7E; }
@@ -368,6 +368,9 @@ h6 {
   text-transform: uppercase;
   margin: 1.70em auto 1em; }
 
+* {
+  box-sizing: border-box; }
+
 html, body {
   min-width: 320px;
   margin: 0;
@@ -386,16 +389,16 @@ table {
   font-size: inherit; }
 
 ::-webkit-input-placeholder {
-  color: #B1B1B1; }
+  color: #BEBEBE; }
 
 :-moz-placeholder {
-  color: #B1B1B1; }
+  color: #BEBEBE; }
 
 ::-moz-placeholder {
-  color: #B1B1B1; }
+  color: #BEBEBE; }
 
 :-ms-input-placeholder {
-  color: #B1B1B1; }
+  color: #BEBEBE; }
 
 input, input[type="name"], input[type="email"], input[type="text"],
 input[type="tel"], input[type="submit"], input[type="number"],
@@ -405,7 +408,7 @@ input[type="password"], input[type="url"], textarea, select {
   margin: 1em auto;
   width: 100%;
   min-height: 2em;
-  border: 1px solid #B1B1B1;
+  border: 1px solid #BEBEBE;
   border-radius: 2px;
   font-family: inherit;
   font-size: 1em; }
@@ -429,7 +432,7 @@ select {
   appearance: none;
   background-color: white;
   cursor: pointer;
-  color: #B1B1B1; }
+  color: #BEBEBE; }
 
 option {
   color: #3C3C3C; }
@@ -469,13 +472,13 @@ input[type="radio"]:checked + .l-lbl--rdo:before {
   height: auto;
   margin: 1em;
   padding: 0.75em;
-  border: 1px solid #B1B1B1;
+  border: 1px solid #BEBEBE;
   border-radius: 2px;
-  background-color: #EAEAEA;
+  background-color: #EEEEEE;
   color: #3C3C3C;
   font-size: 1em; }
   .l-btn:hover, button:hover, input[type="submit"]:hover {
-    background-color: #B1B1B1;
+    background-color: #BEBEBE;
     color: #3C3C3C; }
   .l-btn:active, button:active, input[type="submit"]:active {
     background-color: #7E7E7E; }
@@ -557,8 +560,8 @@ a {
   .l-msg--danger {
     background-color: #FF5F5F; }
   .l-msg--light {
-    background-color: #EAEAEA;
-    border: 1px solid #B1B1B1;
+    background-color: #EEEEEE;
+    border: 1px solid #BEBEBE;
     color: #3C3C3C; }
     .l-msg--light .fa-times:hover {
       color: #7E7E7E; }
@@ -566,17 +569,17 @@ a {
 .l-container {
   width: 960px;
   margin: 0 auto;
-  padding: 1.5em; }
+  padding: 0 24px; }
 
 .l-header {
   width: 100%;
-  height: 70px;
+  height: 72px;
   background-color: #3C3C3C;
   color: white; }
 
 pre {
-  padding: 1.5em;
-  background-color: #B1B1B1;
+  padding: 24px;
+  background-color: #BEBEBE;
   color: #7E7E7E;
   font-family: monospace;
   word-wrap: break-word; }
