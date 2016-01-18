@@ -27,14 +27,14 @@ $unitNone: 0; // helpful to remove margins or padding
 
 // Units map
 $units: (
-    Biggest: $unitBiggest,
-    Bigger: $unitBigger,
-    Big: $unitBig,
-    Regular: $unitRegular,
-    Small: $unitSmall,
-    Smaller: $unitSmaller,
-    Smallest: $unitSmallest,
-    None: $unitNone
+    biggest: $unitBiggest,
+    bigger: $unitBigger,
+    big: $unitBig,
+    regular: $unitRegular,
+    small: $unitSmall,
+    smaller: $unitSmaller,
+    smallest: $unitSmallest,
+    none: $unitNone
 );
 
 // Utility classes for margins and padding

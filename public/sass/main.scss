@@ -19,6 +19,10 @@
   height: size(9);
   background-color: color(gray-dk);
   color: white;
+
+  &__logo {
+      max-height: 100%; height: 50px;
+  }
 }
 
 pre {

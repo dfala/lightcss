@@ -4,20 +4,21 @@ html, body {
     background-color: color(gray-lter);
 }
 
-.l-container--demo {
+.l-container {
     position: relative;
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: size(12) size(10);
+    padding: size(12) size(8);
 }
 
-.l-header img { max-height: 100%; height: 50px; }
-
-.l-header .l-container { background: transparent; }
+.l-header .l-container {
+    padding: size(1.5) size(8);
+    background: transparent;
+}
 
 .side-menu {
-    width: size(28);
+    width: size(20);
     margin-top: size(7.5);
     background-color: color(gray-lter);
     border: 1px solid #DEE3E8;
@@ -28,7 +29,8 @@ html, body {
     @include border-radius();
 
     &--placeholder {
-        width: size(28);
+        min-width: size(20);
+        margin-right: size(6);
         visibility: hidden;
     }
 
