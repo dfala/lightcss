@@ -1,0 +1,83 @@
+@import "../sass/main.scss";
+
+html, body {
+    background-color: color(gray-lter);
+}
+
+.l-container {
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: size(12) size(10);
+}
+
+.l-header .l-container {
+    padding: 0 size(10);
+    background: transparent;
+}
+
+.l-header--demo {
+    padding: size(1.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+.l-footer {
+    display: block;
+}
+
+.side-menu {
+    width: size(20);
+    margin-top: size(7.5);
+    background-color: color(gray-lter);
+    border: 1px solid #DEE3E8;
+    box-shadow: 1px 1px 1px 0px #DEE3E8;
+    position: fixed;
+    top: auto;
+    left: auto;
+    @include border-radius();
+
+    &--placeholder {
+        min-width: size(20);
+        margin-right: size(8);
+        visibility: hidden;
+    }
+
+    &__link {
+      padding: size() size(1.5);
+      border-bottom: 1px solid #DEE3E8;
+      cursor: pointer;
+      @include border-radius();
+
+      &:hover {
+        background-color: color(blue);
+        color: white;
+      }
+
+      &--active {
+        background-color: color(blue);
+        color: white;
+      }
+    }
+}
+
+.section-title {
+    margin-top: size(7.5);
+    padding-bottom: size(1.5);
+    border-bottom: 1px solid color(gray-lter);
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.hljs-title {
+    color: #4C4C4C;
+}
+
+@media (max-width: 960px) {
+    .side-menu, .side-menu--placeholder {
+        display: none;
+    }
+}

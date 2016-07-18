@@ -45,7 +45,7 @@
   window.onscroll = function (e) {
 
     var scrollTop     = $(window).scrollTop(),
-        fonts          = ($('#fonts-title').offset().top) - scrollTop - 200,
+        fonts         = ($('#fonts-title').offset().top) - scrollTop - 200,
         buttons       = ($('#buttons-title').offset().top) - scrollTop - 200,
         messages      = ($('#messages-title').offset().top) - scrollTop - 200,
         inputs        = ($('#inputs-title').offset().top) - scrollTop - 200,

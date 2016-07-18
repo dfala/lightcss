@@ -3,21 +3,6 @@ $lg-screen: 1200px;
 $md-screen: 960px;
 $sm-screen: 640px;
 
-@media (max-width: @md-screen) {
-  .l-container {
-    width: 100%;
-  }
-}
-
-
-@media (max-width: 1040px) {
-  .wrapper {
-    padding-left: 0;
-    #side-menu {
-      display: none;
-    }
-  }
-}
 
 
 // Large Desktop (Above 1200px)
@@ -32,7 +17,9 @@ $sm-screen: 640px;
 
 // Tablet and Phone (anything smaller than 960px)
 @media (max-width: $md-screen) {
-
+    .l-container {
+        width: 100%;
+    }
 }
 
 // Portrait tablet to landscape and desktop

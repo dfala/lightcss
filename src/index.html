@@ -8,38 +8,37 @@
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="public/css/demo.css">
-
+	<link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
 
-	<header class="l-header">
+	<header class="l-header l-header--demo">
 		<div class="l-container padding-left-biggest">
-			<img class="l-header__logo" src="public/images/logo.png" alt="Light CSS logo">
+			<img class="l-header__logo" src="images/logo.png" alt="Light CSS logo">
 		</div>
 	</header>
 
-	<div class="l-container">
+    <div class="l-container">
 
-		<div class="side-menu" id="side-menu">
-			<div id="fonts" class="side-menu__link side-menu__link--active">Fonts</div>
-			<div id="buttons" class="side-menu__link">Buttons</div>
-			<div id="messages" class="side-menu__link">Messages</div>
-			<div id="inputs" class="side-menu__link">Inputs/Forms</div>
-			<div id="headers" class="side-menu__link">Headers</div>
-		</div>
+        <div class="side-menu" id="side-menu">
+        	<div id="fonts" class="side-menu__link side-menu__link--active">Fonts</div>
+        	<div id="buttons" class="side-menu__link">Buttons</div>
+        	<div id="messages" class="side-menu__link">Messages</div>
+        	<div id="inputs" class="side-menu__link">Inputs/Forms</div>
+        	<div id="headers" class="side-menu__link">Headers</div>
+        </div>
 
-		<div class="side-menu--placeholder">placeholder</div>
+        <div class="side-menu--placeholder">placeholder</div>
 
-	  <div>
+        <div class="demo-content"><!-- content -->
 
 			<h4 class="section-title" id="fonts-title">Fonts</h4>
-	    <h1>&lt;h1&gt; heading</h1>
-	    <h2>&lt;h2&gt; heading</h2>
-	    <h3>&lt;h3&gt; heading</h3>
-	    <h4>&lt;h4&gt; heading</h4>
-	    <h5>&lt;h5&gt; heading</h5>
-	    <h6>&lt;h6&gt; heading</h6>
+    	    <h1>&lt;h1&gt; heading</h1>
+    	    <h2>&lt;h2&gt; heading</h2>
+    	    <h3>&lt;h3&gt; heading</h3>
+    	    <h4>&lt;h4&gt; heading</h4>
+    	    <h5>&lt;h5&gt; heading</h5>
+    	    <h6>&lt;h6&gt; heading</h6>
 
 			<h4 class="section-title" id="buttons-title">Buttons</h4>
 			<button>&lt;button&gt;</button>
@@ -49,10 +48,11 @@
 			<button class="l-btn--red">.l-btn-red</button>
 
 			<h4 class="section-title">Links</h4>
-			<a href="http://www.google.com" target="_blank">&lt;a&gt; hyperlink &lt;/a&gt;</a>
-			<h6>&lt;a&gt; link with button class:</h6>
-			<a class="l-btn">&lt;a class="l-btn"&gt;&lt;/a&gt;</a>
-
+			<span class="bold">&lt;a&gt; link: </span>
+                <a href="http://www.google.com" target="_blank">&lt;a&gt; hyperlink &lt;/a&gt;</a>
+            <br>
+            <span class="bold">&lt;a&gt; link with button class: </span>
+			    <a class="l-btn">&lt;a class="l-btn"&gt;&lt;/a&gt;</a>
 
 			<h4 class="section-title" id="messages-title">Messages</h4>
 			<div class="l-msg">
@@ -91,60 +91,57 @@
 				<h6 class="lowercase">&lt;input type="checkbox"&gt;</h6>
 				<div>
 					<input type="checkbox" id="chk-1" checked>
-					<label for="chk-1" class="l-lbl--chk">&lt;label class="l-lbl--chk" for="chk-1"&gt;</label>
+					<label for="chk-1" class="l-lbl--chk" style="font-size: 14px">
+                        &lt;label class="l-lbl--chk" for="chk-1"&gt;
+                    </label>
 					<input type="checkbox" id="chk-2">
-					<label for="chk-2" class="l-lbl--chk">&lt;label class="l-lbl--chk" for="chk-2"&gt;</label>
+					<label for="chk-2" class="l-lbl--chk" style="font-size: 14px">
+                        &lt;label class="l-lbl--chk" for="chk-2"&gt;
+                    </label>
 				</div>
 				<!-- RADIO -->
 				<h6 class="lowercase">&lt;input type="radio"&gt;</h6>
 				<div>
 				  <input type="radio" id="rdo-1" name="rdo-grp" checked>
-				  <label for="rdo-1" class="l-lbl--rdo">&lt;label class="l-lbl--rdo" for="rdo-1"&gt;</label>
+				  <label for="rdo-1" class="l-lbl--rdo" style="font-size: 14px">&lt;label class="l-lbl--rdo" for="rdo-1"&gt;</label>
 				  <input type="radio" id="rdo-2" name="rdo-grp" >
-				  <label for="rdo-2" class="l-lbl--rdo">&lt;label class="l-lbl--rdo" for="rdo-2"&gt;</label>
+				  <label for="rdo-2" class="l-lbl--rdo" style="font-size: 14px">&lt;label class="l-lbl--rdo" for="rdo-2"&gt;</label>
 				</div>
 			</form>
-
 
 			<h4 class="section-title" id="pre-title">Pre</h4>
 			<pre>console.log("this is a &lt;pre&gt; tag in action")</pre>
 
-
 			<h4 class="section-title" id="headers-title">Headers</h4>
-			<h6>Header default view:</h6>
-
-			<header class="l-header-separated">
-				<div class="l-left-box">
-					<div>LOGO</div>
-				</div>
-				<div class="l-right-box">
-					<div>Home</div>
-					<div>Card</div>
-					<div>Card</div>
+			<h6>header with links:</h6>
+			<header class="l-header">
+				<div>LOGO</div>
+				<div>
+					<span class="l-header__link">Link</span>
+					<span class="l-header__link">Link</span>
+					<span class="l-header__link">Link</span>
 				</div>
 			</header>
 
-			<pre class="override-pre"><code class="html">&#60;header class="l-header-separated">
-  &#60;div class="l-left-box">
-    &#60;div>LOGO&#60;/div>
-  &#60;/div>
-  &#60;div class="l-right-box">
-    &#60;div>Home&#60;/div>
-    &#60;div>Card&#60;/div>
-  &#60;div>Card&#60;/div>
-  &#60;/div>
-&#60;/header></code></pre>
+<pre><code class="html">&lt;header class="l-header"&gt;
+    &lt;div&gt;LOGO&lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="l-header__link"&gt;Link&lt;/div&gt;
+        &lt;div class="l-header__link"&gt;Link&lt;/div&gt;
+        &lt;div class="l-header__link"&gt;Link&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;</code></pre>
 
-		</div>
+        </div><!-- content -->
 
-	</div>
+	</div><!-- l-container -->
 
-
-	<!-- FOOTER IS DEPRECATED -->
-	<!-- <footer></footer> -->
+	<footer class="l-footer center">
+        <div>LightCSS</div>
+	</footer>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="public/scripts/scripts.js"></script>
+	<script type="text/javascript" src="scripts/scripts.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

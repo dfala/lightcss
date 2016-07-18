@@ -39,7 +39,7 @@ $units: (
 
 // Utility classes for margins and padding
 @each $size, $unit in $units {
-    .margin#{$size} {
+    .margin-#{$size} {
         margin: #{$unit};
     }
     .margin-top-#{$size} {
@@ -54,7 +54,7 @@ $units: (
     .margin-left-#{$size} {
         margin-left: #{$unit};
     }
-    .padding#{$size} {
+    .padding-#{$size} {
         padding: #{$unit};
     }
     .padding-top-#{$size} {
